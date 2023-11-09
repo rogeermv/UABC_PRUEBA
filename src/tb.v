@@ -17,15 +17,16 @@ module tb ();
     end
 
     // wire up the inputs and outputs
+    reg  clk;
+    reg  rst_n;
+    reg  ena;
+    reg  [7:0] ui_in;
+    reg  [7:0] uio_in;
+
     wire [6:0] segments = uo_out[6:0];
     wire [7:0] uo_out;
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
-    wire clk;
-    wire  rst_n;
-    wire  ena;
-    wire  [7:0] ui_in;
-    wire [7:0] uio_in;
 
     tt_um_seven_segment_seconds #(.MAX_COUNT(1000)) tt_um_seven_segment_seconds (
     // include power ports for the Gate Level test
