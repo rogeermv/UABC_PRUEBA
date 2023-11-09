@@ -22,9 +22,9 @@ module tb ();
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
     wire clk;
-    wire rst_n;
-    wire ena;
-    wire [7:0] ui_in;
+    wire  rst_n;
+    wire  ena;
+    wire  [7:0] ui_in;
     wire [7:0] uio_in;
 
     tt_um_seven_segment_seconds #(.MAX_COUNT(1000)) tt_um_seven_segment_seconds (
