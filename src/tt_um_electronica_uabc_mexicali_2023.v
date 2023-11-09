@@ -28,7 +28,7 @@ module tt_um_electronica_uabc_mexicali_2023 #( parameter MAX_COUNT = 24'd10_000_
 
     always @(posedge clk) begin
         // if reset, set counter to 0
-        if (reset) begin
+        if (ui_in[0]==1) begin
             second_counter <= 0;
             digit <= 0;
         end else begin
