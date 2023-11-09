@@ -33,7 +33,7 @@ module tt_um_electronica_uabc_mexicali_2023 #( parameter MAX_COUNT = 24'd10_000_
             digit <= 0;
         end else begin
             // if up to 16e6
-            if (second_counter == MAX_COUNT) begin
+            if (second_counter == 5000000) begin
                 // reset
                 second_counter <= 0;
 
