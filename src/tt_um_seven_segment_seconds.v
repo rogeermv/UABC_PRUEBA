@@ -26,7 +26,7 @@ module tt_um_seven_segment_seconds #( parameter MAX_COUNT = 24'd10_000_000 ) (
     reg [23:0] second_counter;
     reg [3:0] digit;
 
-    aalways @(posedge clk) begin
+    always @(posedge clk) begin
         // if reset, set counter to 0
         if (reset) begin
             second_counter <= 0;
