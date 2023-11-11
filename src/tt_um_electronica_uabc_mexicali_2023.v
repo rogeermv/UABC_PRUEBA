@@ -40,7 +40,7 @@ module tt_um_electronica_uabc_mexicali_2023 #( parameter MAX_COUNT = 24'd10_000_
                 // increment digit
                 digit <= digit + 1'b1;
 
-                if (digit == 8)
+                if (digit == 7)
                     digit <= 0;
             end else
                 // increment counter
