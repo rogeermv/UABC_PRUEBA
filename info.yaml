@@ -45,14 +45,14 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - compare bit 11
-    - compare bit 12
-    - compare bit 13
-    - compare bit 14
-    - compare bit 15
-    - compare bit 16
-    - compare bit 17
-    - compare bit 18
+    - input 0
+    - input 1
+    - input 2
+    - input 3
+    - input 4
+    - input 5
+    - input 6
+    - input 7
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
     - segment a
